@@ -1,0 +1,539 @@
+/* ============================================================
+                          Common part Css 
+================================================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+q:before,
+q:after {
+  content: "";
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ol,
+ul,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Inter", sans-serif !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+.contact_btn a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #6a4df4;
+  padding: 15px 42px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.title {
+  text-align: center;
+  width: 609px;
+  margin: 0 auto;
+}
+.title h2 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+  color: #151515;
+}
+.title p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  color: #737373;
+}
+/* ============================================================
+                          Navbar Part Css 
+================================================================ */
+nav {
+  background: transparent;
+  position: absolute !important;
+  width: 100%;
+  top: 65px;
+}
+nav ul li {
+  margin-right: 60px;
+}
+nav ul li a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff !important;
+  transition: 0.4s !important;
+  -webkit-transition: 0.4s !important;
+  -moz-transition: 0.4s !important;
+  -ms-transition: 0.4s !important;
+  -o-transition: 0.4s !important;
+}
+nav ul li a:hover {
+  font-weight: 700;
+  color: #4756df !important;
+}
+
+/* ============================================================
+                          Banner part Css 
+================================================================ */
+#banner {
+  background-image: url(../images/banner1.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#banner .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 315px 0px 176px 0px;
+  color: #fff;
+  text-align: center;
+}
+#banner .heading h1 {
+  font-size: 70px;
+  font-weight: 700;
+  width: 950px;
+  margin: 0 auto;
+}
+#banner .info p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  width: 620px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+/* ============================================================
+                          success_rate part Css 
+================================================================ */
+#success_rate {
+  padding-top: 170px;
+}
+#success_rate .bg {
+  background: #e0fff9;
+  border-radius: 20px;
+  margin-bottom: 149px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#success_rate .success {
+  column-gap: 110px;
+}
+#success_rate .success .content {
+  width: 25%;
+  margin-left: 50px;
+  padding: 85px 0px 85px 0px;
+}
+#success_rate .success .content p {
+  font-size: 25px;
+  font-weight: 500;
+  color: #6a4df4;
+}
+#success_rate .success .content h3 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #151515;
+  width: 387px;
+}
+#success_rate .success .ratio {
+  width: 70%;
+}
+#success_rate .success .ratio .items {
+  column-gap: 110px;
+  padding: 69px 0px 126px 0px;
+  margin-left: 50px;
+}
+#success_rate .success .ratio .items .item h3 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 61px;
+  color: #151515;
+}
+#success_rate .success .ratio .items .item p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  color: #737373;
+  margin-top: 15px;
+}
+/* ============================================================
+                        Service Part Css 
+================================================================ */
+#sevice {
+  padding-top: 150px;
+}
+
+#service .service {
+  row-gap: 24px;
+}
+
+#service .service .custom-card {
+  text-align: center;
+  cursor: default;
+  padding: 80px 50px 46px;
+  border-radius: 20px;
+  transition: 0.4s;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#service .service .custom-card:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+#service .service .custom-card .logo {
+  display: inline-block;
+}
+
+#service .service .custom-card h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #151515;
+  margin-top: 40px;
+  margin-bottom: 21px;
+}
+
+#service .service .custom-card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #737373;
+}
+/* ============================================================
+                       Recent Work Part Css 
+================================================================ */
+#recent_work {
+  background-color: #f3f3f3;
+  margin-top: 105px;
+  margin-bottom: 100px;
+}
+
+#recent_work .bg-cl {
+  padding: 150px 0;
+}
+
+#recent_work .works {
+  row-gap: 24px;
+}
+
+#recent_work .title p {
+  margin-bottom: 106px;
+}
+
+#recent_work .works .custom-card {
+  background-color: #ffffff;
+  text-align: center;
+  cursor: default;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#recent_work .works .custom-card .img img {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#recent_work .works .custom-card .info {
+  padding: 0 42px 30px;
+}
+#recent_work .works .custom-card h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #151515;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+#recent_work .works .custom-card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #737373;
+}
+
+/* ============================================================
+                       Choose_Agence Part Css 
+================================================================ */
+#choose_agence {
+  margin-top: 150px;
+}
+#choose_agence .title {
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+}
+#choose_agence .title h2 {
+  margin: auto;
+  width: 518px;
+}
+#choose_agence .title p {
+  margin-top: 15px;
+  margin-bottom: 135px;
+}
+#choose_agence .text-part {
+  width: 65%;
+}
+#choose_agence .text-part .gap {
+  row-gap: 88px;
+}
+#choose_agence .text-part .gap .group h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #151515;
+  margin: 20px 0 10px;
+}
+
+#choose_agence .text-part .gap .group p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #737373;
+  width: 315px;
+}
+#choose_agence .image-part {
+  width: 35%;
+}
+/* ============================================================
+                       Client Review Part Css 
+================================================================ */
+#client_review {
+  margin-top: 106px;
+  margin-bottom: 100px;
+}
+#client_review .title {
+  margin-bottom: 130px;
+}
+#client_review .item {
+  padding: 54px 58px;
+  border-radius: 30px;
+  transition: 0.4s;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#client_review .item:hover {
+  background-color: #f4efef;
+}
+#client_review .item p {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 20px 0px;
+  color: #7b7b7b;
+  width: 307px;
+}
+#client_review .item .custome-flex {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+}
+#client_review .item .custome-flex .user-details h4 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #232323;
+}
+#client_review .item .custome-flex .user-details h5 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #7b7b7b;
+}
+/* ============================================================
+                       quote Part Css 
+================================================================ */
+#quote {
+  background-color: #f3f3f3;
+  padding: 150px 0px;
+  margin-bottom: 150px;
+}
+#quote .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#quote .content h2 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+  color: #151515;
+  width: 470px;
+  margin-bottom: 20px;
+}
+#quote .content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #7b7b7b;
+  width: 526px;
+}
+#quote .content p:last-child {
+  margin-top: 10px;
+}
+#quote .form {
+  display: flex;
+  flex-direction: column;
+  padding: 61px 43px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 536px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#quote .form h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #151515;
+  text-align: center;
+}
+#quote .form form {
+  display: flex;
+  flex-direction: column;
+}
+#quote .form form label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #151515;
+  margin-bottom: 10px;
+}
+#quote .form form input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #d0d0d0;
+  margin-bottom: 20px;
+  padding: 19px 23px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#quote .form form button {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  border: none;
+  background-color: #6a4df4;
+  border-radius: 10px;
+  padding: 19px 0px;
+  margin-top: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/* ============================================================
+                       Footer Part Css 
+================================================================ */
+footer .custom-margin {
+  margin-bottom: 50px;
+}
+footer .content .footer-logo {
+  margin-bottom: 30px;
+}
+footer .content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #7b7b7b;
+  width: 356px;
+}
+footer .custom-margin h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #151515;
+  margin-bottom: 40px;
+}
+footer .custom-margin a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #7b7b7b;
+}
+footer .border {
+  border: 1px solid #e8e8e8;
+  margin-top: 50px;
+}
+footer .copy-right p {
+  padding: 33px 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #d0d0d0;
+}
